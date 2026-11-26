@@ -1,76 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon Space | My Website</title>
+    <title>Informasi Kegiatan Kampus</title>
+
+    <!-- Menghubungkan file CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- HEADER -->
+    <header id="home">
+        <h1>Informasi Kegiatan Kampus</h1>
+        <p>Universitas Muhammadiyah Purworejo</p>
+    </header>
+
+    <!-- NAVIGASI -->
     <nav>
-        <h2 class="logo">NEON<span>.</span></h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#home">Home</a>
+        <a href="#kegiatan">Kegiatan</a>
+        <a href="#kontak">Kontak</a>
     </nav>
 
-    <section class="hero" id="home">
-        <div class="content">
-            <p class="subtitle">WELCOME TO MY WEBSITE ✨</p>
-            <h1>Hello, I'm <span>Creative</span> Person!</h1>
-            <p class="description">
-                Selamat datang di dunia kecilku.
-                Tempat kreativitas, ide, dan imajinasi bertemu.
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <section id="kegiatan">
+            <h2 class="judul">Daftar Kegiatan Kampus</h2>
+
+            <div class="container-kegiatan">
+
+                <!-- Kegiatan 1 -->
+                <div class="card">
+                    <h3>Seminar Teknologi Informasi</h3>
+                    <p class="tanggal">10 Desember 2026</p>
+                    <p>
+                        Kegiatan seminar yang membahas perkembangan
+                        teknologi informasi, kecerdasan buatan,
+                        serta pemanfaatan teknologi dalam kehidupan
+                        sehari-hari.
+                    </p>
+                </div>
+
+                <!-- Kegiatan 2 -->
+                <div class="card">
+                    <h3>Workshop Pemrograman Web</h3>
+                    <p class="tanggal">15 Desember 2026</p>
+                    <p>
+                        Kegiatan pelatihan yang bertujuan meningkatkan
+                        kemampuan mahasiswa dalam membuat website
+                        menggunakan HTML, CSS, dan JavaScript.
+                    </p>
+                </div>
+
+                <!-- Kegiatan 3 -->
+                <div class="card">
+                    <h3>Festival Seni dan Budaya</h3>
+                    <p class="tanggal">20 Desember 2026</p>
+                    <p>
+                        Kegiatan yang menampilkan berbagai kreativitas
+                        mahasiswa melalui pertunjukan seni, musik,
+                        tarian, dan pameran budaya.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TOMBOL JAVASCRIPT -->
+        <section>
+            <button class="tombol" onclick="tampilkanPesan()">
+                Tampilkan Pesan
+            </button>
+
+            <p id="pesan">
+                Silakan klik tombol untuk menampilkan pesan.
             </p>
-            <a href="#about" class="btn">Explore More ↗</a>
-        </div>
+        </section>
 
-        <div class="planet">
-            <div class="ring"></div>
-            <div class="circle">✦</div>
-        </div>
-    </section>
+        <!-- KONTAK -->
+        <section id="kontak">
+            <h2 class="judul">Kontak</h2>
+            <p class="alamat">
+                Universitas Muhammadiyah Purworejo<br>
+                Jl. K.H.A. Dahlan No. 3, Purworejo
+            </p>
+        </section>
 
-    <section class="about" id="about">
-        <h2>About <span>Me</span></h2>
-        <p>
-            Aku sedang belajar membuat website menggunakan
-            HTML dan CSS. Ini adalah salah satu karya
-            percobaan pertamaku!
-        </p>
+    </main>
 
-        <div class="cards">
-            <div class="card">
-                <h3>💻 Coding</h3>
-                <p>Belajar membuat website yang menarik.</p>
-            </div>
-
-            <div class="card">
-                <h3>🎨 Design</h3>
-                <p>Menciptakan tampilan yang kreatif.</p>
-            </div>
-
-            <div class="card">
-                <h3>🚀 Dream</h3>
-                <p>Terus belajar dan berkembang.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>Let's <span>Connect!</span></h2>
-        <p>Terima kasih sudah mengunjungi website-ku.</p>
-        <a href="mailto:hello@example.com" class="btn">
-            Contact Me
-        </a>
-    </section>
-
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Neon Space | Made with ❤️</p>
+        <p>&copy; 2026 Universitas Muhammadiyah Purworejo.</p>
+        <p>Website Informasi Kegiatan Kampus</p>
     </footer>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
